@@ -7,7 +7,11 @@ module BundlerDate
     # The exec method will be called with the `command_name` and the `args`.
     # This is where you should handle all logic and functionality
     def exec(command_name, args)
-      puts "You called " + command_name + " with args: " + args.inspect
+      specs = Bundler.definition.resolve
+      specs.each { |spec| Bundler.ui.info spec.name }
+      # gem = Bundler::CLI::Common.select_spec("rspec")
+      # definition = Bundler.definition(true)
+      # p definition.find_resolved_spec(gem).platform
     end
   end
 
