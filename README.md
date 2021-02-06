@@ -1,15 +1,9 @@
 # BundlerDate
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bundler_date`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
-Add this line to your application's Gemfile:
-
 ```ruby
-gem 'bundler_date'
+plugin 'bundler_date'
 ```
 
 And then execute:
@@ -22,14 +16,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ bundle date
 
-## Development
+## Example
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```bash
+$ bundle date
+Resolving dependencies...
++--------------------+---------+--------------+--------+-------------+--------------+
+| Gem                | Current | Current Date | Latest | Latest Date | Days between |
++--------------------+---------+--------------+--------+-------------+--------------+
+| diff-lcs           | 1.4.4   | 2020-07-01   | 1.4.4  | 2020-07-01  | 0            |
+| rspec-support      | 3.10.1  | 2020-12-27   | 3.10.2 | 2021-01-28  | 32           |
+| rspec-core         | 3.10.1  | 2020-12-27   | 3.10.1 | 2020-12-27  | 0            |
+| rspec-expectations | 3.10.1  | 2020-12-27   | 3.10.1 | 2020-12-27  | 0            |
+| rspec-mocks        | 3.10.1  | 2020-12-28   | 3.10.2 | 2021-01-28  | 31           |
+| rspec              | 3.10.0  | 2020-10-30   | 3.10.0 | 2020-10-30  | 0            |
++--------------------+---------+--------------+--------+-------------+--------------+
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bundler_date.
+```
