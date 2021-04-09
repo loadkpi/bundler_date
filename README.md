@@ -2,6 +2,8 @@
 
 ## Installation
 
+Specify the plugin in your Gemfile:
+
 ```ruby
 plugin 'bundler_date'
 ```
@@ -12,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install bundler_date
+    $ bundle plugin install bundler_date
 
 ## Usage
 
@@ -22,16 +24,13 @@ Or install it yourself as:
 
 ```bash
 $ bundle date
-Resolving dependencies...
-+--------------------+---------+--------------+--------+-------------+--------------+
-| Gem                | Current | Current Date | Latest | Latest Date | Days between |
-+--------------------+---------+--------------+--------+-------------+--------------+
-| diff-lcs           | 1.4.4   | 2020-07-01   | 1.4.4  | 2020-07-01  | 0            |
-| rspec-support      | 3.10.1  | 2020-12-27   | 3.10.2 | 2021-01-28  | 32           |
-| rspec-core         | 3.10.1  | 2020-12-27   | 3.10.1 | 2020-12-27  | 0            |
-| rspec-expectations | 3.10.1  | 2020-12-27   | 3.10.1 | 2020-12-27  | 0            |
-| rspec-mocks        | 3.10.1  | 2020-12-28   | 3.10.2 | 2021-01-28  | 31           |
-| rspec              | 3.10.0  | 2020-10-30   | 3.10.0 | 2020-10-30  | 0            |
-+--------------------+---------+--------------+--------+-------------+--------------+
+Fetching gem metadata from https://gems.contribsys.com/.
 
+ Gem                              Current  Current Date  Latest   Latest Date  Days between 
+
+ actioncable                      5.2.5    2021-03-26    6.1.3.1  2021-04-09   14           
+ actionmailer                     5.2.5    2021-03-26    6.1.3.1  2021-04-09   14           
+ actionpack                       5.2.5    2021-03-26    6.1.3.1  2021-04-09   14           
+ actionview                       5.2.5    2021-03-26    6.1.3.1  2021-04-09   14           
+ active_model_serializers         0.10.7   2017-11-15    0.10.12  2021-04-09   1241
 ```
