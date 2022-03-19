@@ -18,4 +18,6 @@ jobs:
     - name: lint
       run: bundle exec rubocop
     - name: test
-      run: bin/test
+      run: |
+        git submodule update --init
+        bin/test
