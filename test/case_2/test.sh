@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-bundle |& :
+bundle 1> /dev/null 2> /dev/null
 bundle date
