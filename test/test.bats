@@ -11,7 +11,6 @@ setup() {
 }
 
 @test "with blank Gemfile" {
-    #test.sh
     cd $DIR/case_1
     run $DIR/case_1/test.sh
 
