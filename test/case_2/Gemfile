@@ -2,6 +2,6 @@
 
 source "https://rubygems.org"
 
-plugin "bundler_date", path: "../../"
+plugin "bundler_date", path: File.expand_path('../../', __dir__)
 
 gem "rainbow", "3.0.0"

@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-plugin "bundler_date", path: "../../"
+plugin "bundler_date", path: File.expand_path('../../', __dir__)
