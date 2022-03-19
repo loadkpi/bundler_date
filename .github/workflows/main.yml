@@ -3,7 +3,7 @@ name: Ruby
 on: [push,pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -11,8 +11,11 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7.1
-    - name: Run the default task
+    - name: build
       run: |
-        gem install bundler -v 2.2.6
+        gem install bundler
         bundle install
-        bundle exec rake
+    - name: lint
+      run: bundle exec rubocop
+    - name: test
+      run: ./test/bats/bin/bats test/test.bats
