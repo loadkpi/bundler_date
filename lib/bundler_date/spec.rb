@@ -12,20 +12,20 @@ module BundlerDate
       @active_spec_list ||=
         spec.source.specs
             .search(spec.name)
-            .select {|s| s.match_platform(spec.platform) }
+            .select { |s| s.match_platform(spec.platform) }
             .sort_by(&:version)
     end
 
-    def method_missing(meth, *args)
-      if @spec.respond_to?(meth)
-        @spec.send(meth, *args)
+    def method_missing(method_name, *args)
+      if @spec.respond_to?(method_name)
+        @spec.send(method_name, *args)
       else
         super
       end
     end
 
-    def respond_to?(meth)
-      @spec.respond_to?(meth)
+    def respond_to_missing?(method_name, *args)
+      @spec.respond_to?(method_name) or super
     end
   end
 end
