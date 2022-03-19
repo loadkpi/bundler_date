@@ -18,4 +18,4 @@ jobs:
     - name: lint
       run: bundle exec rubocop
     - name: test
-      run: ./test/bats/bin/bats test/test.bats
+      run: bin/test
