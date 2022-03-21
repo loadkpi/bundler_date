@@ -1,5 +1,7 @@
 # BundlerDate
 
+[![Gem Version](https://badge.fury.io/rb/bundler_date.svg)](https://badge.fury.io/rb/bundler_date)
+
 ## What?
 
 Bundle has great command `bundle outdated` to compare installed gems with newer versions available.
