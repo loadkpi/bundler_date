@@ -1,6 +1,8 @@
 AllCops:
   NewCops: enable
   TargetRubyVersion: 2.6
+  Exclude:
+    - test/bats/**/*
 
 Style/StringLiterals:
   Enabled: true

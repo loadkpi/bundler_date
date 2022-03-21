@@ -26,13 +26,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "bundler", "~> 2.0"
-  spec.add_dependency "gems"
+  spec.add_dependency "bundler", ">= 2.3"
   spec.add_dependency "terminal-table"
 
   spec.add_development_dependency "rake",    "~> 13.0"
-  spec.add_development_dependency "rspec",   "~> 3.0"
   spec.add_development_dependency "rubocop", "~> 1.7"
   spec.add_development_dependency "rubocop-rake"
-  spec.add_development_dependency "rubocop-rspec"
 end
